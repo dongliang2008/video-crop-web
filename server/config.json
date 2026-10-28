@@ -1,0 +1,44 @@
+﻿{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8010
+  },
+  "default_output_dir": "",
+  "video_exts": [".mp4", ".webm", ".mov", ".m4v", ".avi", ".mkv", ".flv", ".wmv"],
+  "frame": {
+    "dir_name": "_帧缓存",
+    "format": "jpg"
+  },
+  "processing": {
+    "vwidth": 1080,
+    "hwidth": 1920,
+    "hheight": 1080,
+    "bg_sigma": 40,
+    "blur_sigma": 30,
+    "enhance_level": "medium",
+    "max_concurrent": 2,
+    "crf": 28
+  },
+  "vision_api": {
+    "endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+    "api_key": "请在此处填入你的GLM_API_KEY（参考.env.example）",
+    "models": ["glm-4v-flash", "glm-4.6v-flash"],
+    "timeout": 120,
+    "max_tokens": 512,
+    "temperature": 0.1,
+    "request_interval": 1.0
+  },
+  "naming": {
+    "default_prefix": "通用",
+    "placeholder": "XX",
+    "max_filename_len": 80,
+    "word_slots": 3,
+    "country_names": [
+      "中亚五国", "中国", "乌克兰", "也门胡塞", "以色列", "伊朗", "俄罗斯",
+      "加拿大", "印度", "古巴", "台湾", "委内瑞拉", "巴基斯坦", "德国",
+      "新加坡", "日本", "朝鲜", "欧洲", "沙特", "法国", "美国", "英国",
+      "菲律宾", "越南", "韩国", "孟加拉国"
+    ],
+    "noise_words": ["通用", "XX", "横屏", "竖屏", "段", "裁剪", "去水印", "增强", "预览", "mp4", "webm", "mov", "mkv"]
+  }
+}
